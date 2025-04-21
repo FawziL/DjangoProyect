@@ -80,13 +80,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'UPTAMCA',
-        'USER': 'Fawzi\fawzi',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost\\SQLEXPRESS',
-        'PORT': '',       # Puerto predeterminado de SQL Server
+        'HOST': 'localhost',
+        'PORT': '',
         'OPTIONS': {
-            'driver': 'ODBC Driver 17 for SQL Server',  # Verifica el nombre exacto del driver
-            'unicode_results': True,
+            'driver': 'ODBC Driver 17 for SQL Server',
+            'trusted_connection': 'yes',
         },
     }
 }
